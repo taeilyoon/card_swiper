@@ -240,24 +240,25 @@ class _PageIndicatorState extends State<PageIndicator> {
 
   @override
   Widget build(BuildContext context) {
-    Widget child = SizedBox(
-      width: widget.count * widget.size + (widget.count - 1) * widget.space,
-      height: widget.size,
-      child: CustomPaint(
-        painter: _createPainter(),
-      ),
-    );
+    return Container();
+    // Widget child = SizedBox(
+    //   width: widget.count * widget.size + (widget.count - 1) * widget.space,
+    //   height: widget.size,
+    //   child: CustomPaint(
+    //     painter: _createPainter(),
+    //   ),
+    // );
 
-    if (widget.layout == PageIndicatorLayout.SCALE ||
-        widget.layout == PageIndicatorLayout.COLOR) {
-      child = ClipRect(
-        child: child,
-      );
-    }
+    // if (widget.layout == PageIndicatorLayout.SCALE ||
+    //     widget.layout == PageIndicatorLayout.COLOR) {
+    //   child = ClipRect(
+    //     child: child,
+    //   );
+    // }
 
-    return IgnorePointer(
-      child: child,
-    );
+    // return IgnorePointer(
+    //   child: child,
+    // );
   }
 
   void _setInitialPage() {
